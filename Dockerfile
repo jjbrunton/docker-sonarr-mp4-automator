@@ -15,16 +15,16 @@ RUN \
   zlib1g-dev
 
 RUN \
-  pip2 install -U pip &&
-  pip2 install requests && \
-  pip2 install requests[security] && \
-  pip2 install requests-cache && \
-  pip2 install babelfish && \
-  pip2 install 'guessit<2' && \
-  pip2 install 'subliminal<2' && \
-  pip2 install stevedore==1.19.1 && \
-  pip2 install python-dateutil && \
-  pip2 install qtfaststart && \
+  python -m pip install --upgrade pip  &&
+  pip install requests && \
+  pip install requests[security] && \
+  pip install requests-cache && \
+  pip install babelfish && \
+  pip install 'guessit<2' && \
+  pip install 'subliminal<2' && \
+  pip install stevedore==1.19.1 && \
+  pip install python-dateutil && \
+  pip install qtfaststart && \
   git clone git://github.com/mdhiggins/sickbeard_mp4_automator.git /sickbeard_mp4_automator/ && \
   touch /sickbeard_mp4_automator/info.log && \
   chmod a+rwx -R /sickbeard_mp4_automator && \
