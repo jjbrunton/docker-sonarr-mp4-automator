@@ -1,4 +1,4 @@
-FROM linuxserver/sonarr
+FROM linuxserver/sonarr:develop
 
 RUN \
   apt-get update && \
